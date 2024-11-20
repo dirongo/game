@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissor</title>
+</head>
+<style>
+    h4{
+        margin: 0 0 10px 150px;
+    }
+    body{
+        margin: 10px;
+        padding: 0;
+        
+        
+    }
+    #rock{
+        background-color: rgb(80, 80, 196);
+
+    }
+    #paper{
+        background-color: greenyellow;
+
+    }
+    #cissor{
+        background-color: orange;
+    }
+    .game{
+        font-size: large;
+        margin:  10px 0 0 70px;
+
+    }
+</style>
+<body>
+   <h4>Rock Paper Cissor</h4> 
+   <button class="game" id="rock" onclick="
+   
+   let  randomchoice= Math.random();
+      
+      let computerMove = ' ';
+      if(randomchoice > 0 && randomchoice <1/3){
+          computerMove  = 'rock';
+      }
+      else if(randomchoice > 1/3 && randomchoice <2/3){
+          computerMove = 'paper';
+
+      }
+      else if(randomchoice>1/3&&randomchoice<1){
+          computerMove = 'scissor'
+      }
+      
+
+      let results= ' ';
+      if(computerMove==='rock'){
+          results='Tie🤝';
+      }
+      else if(computerMove==='paper'){
+          results='Lose😭';
+      }
+      else if(computerMove==='scissor'){
+          results='Win💪';
+      }
+
+      alert('you choosed rock.compuer choosed '+computerMove +' you '+ results );
+   " >
+   Rock
+   </button>
+   <button id="paper" class="game" onclick="
+    let  random= Math.random();
+      
+      let computer = ' ';
+      if(random > 0 && random <1/3){
+          computer  = 'rock';
+      }
+      else if(random> 1/3 && random <2/3){
+          computer = 'paper';
+
+      }
+      else if(random >1/3 && random<1){
+          computer = 'scissor'
+      }
+      
+
+      let result= ' ';
+      if(computer==='rock'){
+          result='Win💪'
+      }
+      else if(computer==='paper'){
+          result='Tie🤝'
+      }
+      else if(computer==='scissor'){
+          result='Lose😭'
+      }
+
+      alert('you choosed paper.compuer choosed '+computer +' you '+ result);
+   
+   
+   
+   ">Paper</button>
+   <button  id="cissor" class="game" onclick="
+   let  choice= Math.random();
+      
+      let Move = ' ';
+      if(choice > 0 && choice <1/3){
+          Move  = 'rock';
+      }
+      else if(choice > 1/3 && choice <2/3){
+          Move = 'paper';
+
+      }
+      else if(choice>1/3&&choice<1){
+          Move = 'scissor'
+      }
+      
+
+      let resul= ' '
+      if(Move==='rock'){
+          resul='lose😭'
+      }
+      else if(Move==='paper'){
+          resul='Win💪'
+      }
+      else if(Move==='scissor'){
+          resul='Tie🤝'
+      }
+
+      alert('you choosed scissor.compuer choosed '+Move +' you '+ resul);
+   
+   
+   
+   
+   ">Cissor</button>
+</body>
+</html>
